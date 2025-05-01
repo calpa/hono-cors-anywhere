@@ -76,7 +76,6 @@ app.all('/*', async c => {
   // Disallow sending cookies via credentials
   reqHeaders.delete('cookie')
   reqHeaders.delete('cookie2')
-  reqHeaders.delete('authorization') // Optionally block auth headers
 
   // Proxy request
   try {
